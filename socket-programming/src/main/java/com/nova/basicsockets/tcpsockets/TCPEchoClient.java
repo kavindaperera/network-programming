@@ -1,4 +1,4 @@
-package com.nova.basicsockets;
+package com.nova.basicsockets.tcpsockets;
 
 import java.io.IOException;
 import java.io.InputStream;
