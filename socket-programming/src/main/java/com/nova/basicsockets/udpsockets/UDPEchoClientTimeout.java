@@ -23,7 +23,7 @@ public class UDPEchoClientTimeout {
 
         socket.setSoTimeout(TIMEOUT);   // Maximum receive blocking time (milliseconds)
 
-        DatagramPacket sendPacket = new DatagramPacket(bytesToSend, //  Send packet
+        DatagramPacket sendPacket = new DatagramPacket(bytesToSend, //  Send packet : data, destination address, destination port
                 bytesToSend.length, serverAddress, servPort);
 
         DatagramPacket receivePacket =                              //  Receiving packet
