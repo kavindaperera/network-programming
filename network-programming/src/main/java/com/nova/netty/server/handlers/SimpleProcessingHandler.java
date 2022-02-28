@@ -1,4 +1,4 @@
-package com.nova.netty.handlers;
+package com.nova.netty.server.handlers;
 
 import com.nova.netty.models.RequestData;
 import com.nova.netty.models.ResponseData;

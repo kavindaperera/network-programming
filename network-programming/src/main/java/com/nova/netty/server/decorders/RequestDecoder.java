@@ -1,4 +1,4 @@
-package com.nova.netty.decorders;
+package com.nova.netty.server.decorders;
 
 import com.nova.netty.models.RequestData;
 import io.netty.buffer.ByteBuf;

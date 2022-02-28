@@ -1,4 +1,4 @@
-package com.nova.netty.encoders;
+package com.nova.netty.server.encoders;
 
 import com.nova.netty.models.ResponseData;
 import io.netty.buffer.ByteBuf;
