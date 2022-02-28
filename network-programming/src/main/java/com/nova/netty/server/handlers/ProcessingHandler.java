@@ -13,7 +13,7 @@ public class ProcessingHandler extends ChannelInboundHandlerAdapter {
         super.channelRead(ctx, msg);
         RequestData requestData = (RequestData) msg;
         ResponseData responseData = new ResponseData();
-        requestData.setIntValue(requestData.getIntValue() * 2);
+        responseData.setIntValue(requestData.getIntValue() * 2);
         ChannelFuture future = ctx.writeAndFlush(responseData);
         future.addListener(ChannelFutureListener.CLOSE);
         System.out.println(requestData);

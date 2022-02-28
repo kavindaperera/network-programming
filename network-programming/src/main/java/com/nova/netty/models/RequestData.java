@@ -13,4 +13,11 @@ public class RequestData {
     @Setter
     private String stringValue;
 
+    @Override
+    public String toString() {
+        return "RequestData{" +
+                "intValue=" + intValue +
+                ", stringValue='" + stringValue + '\'' +
+                '}';
+    }
 }

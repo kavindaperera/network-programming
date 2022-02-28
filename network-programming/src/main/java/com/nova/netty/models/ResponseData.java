@@ -9,4 +9,10 @@ public class ResponseData {
     @Setter
     private int intValue;
 
+    @Override
+    public String toString() {
+        return "ResponseData{" +
+                "intValue=" + intValue +
+                '}';
+    }
 }
