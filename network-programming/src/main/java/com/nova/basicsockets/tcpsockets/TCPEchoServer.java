@@ -26,6 +26,11 @@ public class TCPEchoServer {
             InputStream in = clntSock.getInputStream();
             OutputStream out = clntSock.getOutputStream();
 
+            // Send a "Hello" message to the client
+            String helloMessage = "Hello";
+            byte[] helloBuf = helloMessage.getBytes();
+            out.write(helloBuf);
+
             // Receive until client closes connection, indicated by -1 return
             while ((recvMsgSize = in.read(receiveBuf)) != -1) {
                 out.write(receiveBuf, 0, recvMsgSize);

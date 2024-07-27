@@ -22,15 +22,26 @@ public class TCPEchoClient {
 
         // Create socket that is connected to server on specified port
         Socket socket = new Socket(server, servPort);
-        System.out.println("Connected to server...sending echo string");
+        System.out.println("Connected to server...");
         InputStream in = socket.getInputStream();       // receive by reading from the InputStream
         OutputStream out = socket.getOutputStream();    // send data over the socket by writing bytes to the OutputStream
+
+        byte[] helloBuf = new byte[5];
+        int totalBytesRcvd = 0;     //  Total bytes received so far
+        int bytesRecvd;             //  Bytes received in the last read
+
+        while (totalBytesRcvd < helloBuf.length) {
+            if ((bytesRecvd = in.read(helloBuf, totalBytesRcvd, helloBuf.length - totalBytesRcvd)) == -1)
+                throw new SocketException("Connection closed prematurely");
+            totalBytesRcvd += bytesRecvd;
+        }
+
+        System.out.println("Server says: " + new String(helloBuf));
 
         out.write(data);    // Send the encoded string to the server
 
         // Receive the same string back from the server
-        int totalBytesRcvd = 0;     //  Total bytes received so far
-        int bytesRecvd;             //  Bytes received in the last read
+        totalBytesRcvd = 0; // Reset
         while (totalBytesRcvd < data.length){
             if ((bytesRecvd = in.read(data, totalBytesRcvd, data.length - totalBytesRcvd)) == -1)
                 throw new SocketException("Connection closed prematurely");
