@@ -1,8 +1,8 @@
-# Network Programming
+# 🌐 Network Programming
 
 Welcome to the Network Programming repository! This repository contains various examples and exercises related to network programming, primarily using Java.
 
-## Table of Contents
+## 📋 Table of Contents
 
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
@@ -10,18 +10,18 @@ Welcome to the Network Programming repository! This repository contains various 
 - [Repository Tree](#repository-tree)
 
 
-## Introduction
+## 📋 Table of Contents
 
 This repository is a collection of network programming examples designed to help you understand and implement network communication using Java. It includes examples such as TCP echo server and client, UDP communication, and other common networking tasks.
 
-## Prerequisites
+## 📋 Table of Contents
 
 To run the examples in this repository, you will need the following:
 
-- Java Development Kit (JDK) 8 or higher
-- A code editor or IDE (e.g., IntelliJ IDEA, Eclipse, VSCode)
+- ☕ Java Development Kit (JDK) 8 or higher
+- 🖥️ A code editor or IDE (e.g., IntelliJ IDEA, Eclipse, VSCode)
 
-## Setup
+# 🏗️ Setup
 
 1. **Clone the repository:**
 
@@ -38,7 +38,7 @@ To run the examples in this repository, you will need the following:
 3. **Open the project in your preferred IDE or code editor.**
 
 
-## Repository Tree
+## 🌳 Repository Tree
 ```
 📦 
 ├─ .gitignore
