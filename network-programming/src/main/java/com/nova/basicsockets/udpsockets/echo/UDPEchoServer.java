@@ -1,4 +1,4 @@
-package com.nova.basicsockets.udpsockets;
+package com.nova.basicsockets.udpsockets.echo;
 import java.io.IOException;
 import java.net.*;
 public class UDPEchoServer {

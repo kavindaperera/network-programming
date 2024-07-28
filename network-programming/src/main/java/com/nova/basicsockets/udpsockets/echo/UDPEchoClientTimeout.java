@@ -1,4 +1,4 @@
-package com.nova.basicsockets.udpsockets;
+package com.nova.basicsockets.udpsockets.echo;
 import java.net.*;
 import java.io.*;
 
